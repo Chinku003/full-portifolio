@@ -5,7 +5,7 @@ import ProjectsSection from './sections/ProjectsSection';
 import EducationSection from './sections/EducationSection';
 import ContactSection from './sections/ContactSection';
 
-import styles from './Mainbody.module.css';
+import styles from "./MainBody.module.css";
 
 function MainBody() {
   return (
