@@ -1,0 +1,45 @@
+.footer{
+    background: #0f172a;
+    color: #e2e8f0;
+    padding: 2rem 1rem;
+    margin-top: 40px;
+    border-top: 1px solid rgba(148,163,184,0.25);
+}
+
+.inner{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    align-items: center;
+    text-align: center;
+}
+
+.brand{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.name{
+    font-size: 1.05rem;
+    letter-spacing: 0.2px;
+}
+
+.role{
+    color: #94a3b8;
+    font-weight: 600;
+}
+
+.divider{
+    opacity: 0.6;
+}
+
+.meta{
+    color: #94a3b8;
+    font-size: 0.95rem;
+}
+
