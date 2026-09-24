@@ -19,6 +19,6 @@ function MainBody() {
     </section>
   );
 }
-
+ 
 export default MainBody;
 

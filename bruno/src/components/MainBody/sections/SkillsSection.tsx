@@ -1,4 +1,4 @@
-import styles from '../Mainbody.module.css';
+import styles from '../MainBody.module.css';
 
 function SkillsSection() {
   return (

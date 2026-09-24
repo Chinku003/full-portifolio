@@ -1,4 +1,4 @@
-import styles from '../Mainbody.module.css';
+import styles from '../MainBody.module.css';
 import heroImage from '../../../assets/picha.jpeg';
 
 function HeroSection() {

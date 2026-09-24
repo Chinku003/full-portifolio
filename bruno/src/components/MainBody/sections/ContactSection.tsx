@@ -1,5 +1,5 @@
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok, FaWhatsapp } from 'react-icons/fa';
-import styles from '../Mainbody.module.css';
+import styles from '../MainBody.module.css';
 import { useState, type ChangeEvent, type FormEvent } from 'react';
 
 

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -71,3 +72,7 @@ export default defineConfig([
   },
 ])
 ```
+=======
+title: A portfolio website  showcasing  my  skill, education background  and work experience.
+languages  used  are  for  frontend are  react and  JavaScript for  backend python and Django
+>>>>>>> 3b260ce68a1ff065aa6ab27a96116cf3c1a3e828
