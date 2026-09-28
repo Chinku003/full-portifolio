@@ -31,13 +31,30 @@ SECRET_KEY = 'django-insecure-44avqa%m=9)s-13#%xdj3j32(u=-&rh_i_omf*0l&uz)!qpk*s
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [  "full-portifolio-backend.onrender.com",
-                 "localhost",
-                 "127.0.0.1",]
+ALLOWED_HOSTS = [
+    host.strip()
+    for host in os.getenv(
+        'ALLOWED_HOSTS',
+        'localhost,127.0.0.1,full-portifolio-backend.onrender.com,full-portifolio-frontend.onrender.com'
+    ).split(',')
+    if host.strip()
+]
 
 CORS_ALLOWED_ORIGINS = [
     origin.strip()
-    for origin in os.getenv('CORS_ALLOWED_ORIGINS', 'http://localhost:5173,http://127.0.0.1:5173').split(',')
+    for origin in os.getenv(
+        'CORS_ALLOWED_ORIGINS',
+        'http://localhost:5173,http://127.0.0.1:5173,https://full-portifolio-frontend.onrender.com'
+    ).split(',')
+    if origin.strip()
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    origin.strip()
+    for origin in os.getenv(
+        'CSRF_TRUSTED_ORIGINS',
+        'http://localhost:5173,http://127.0.0.1:5173,https://full-portifolio-frontend.onrender.com'
+    ).split(',')
     if origin.strip()
 ]
 
