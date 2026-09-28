@@ -61,7 +61,12 @@ function ContactSection() {
     setServerMessage('');
 
     try {
-      const apiBaseUrl = import.meta.env.VITE_API_URL || 'http://127.0.0.1:8000';
+      const apiBaseUrl =
+        import.meta.env.VITE_API_URL?.trim() ||
+        (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1'
+          ? 'http://127.0.0.1:8000'
+          : 'https://full-portifolio-backend.onrender.com');
+
       const response = await fetch(`${apiBaseUrl}/api/contact/`, {
         method: 'POST',
         headers: {
